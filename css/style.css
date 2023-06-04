@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+:root {
+    --fonte-menu: 'Montserrat', sans-serif;
+    --fonte-titulo: 'Lexend', sans-serif;
+    --fonte-texto: 'Manrope', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    text-align: center;
+    width: 100%;
+    min-height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    color: #fff;  
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    background-color: black;
+}
+
+.ctr-img {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.800),rgba(0, 0, 0, 0.800)),
+    url(../imagem/fundo1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.titulo {
+    width: 90%;
+    font-family: var(--fonte-titulo);
+    font-size: 6vmin;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.txt-inicio {
+    width: 70%;
+    font-family: var(--fonte-texto);
+    font-size: 3vmin;
+    text-align: center;
+    color: white;
+    margin: 10px 20px;
+}
+
+.btn {
+    color: #fff;
+    border: 2px solid #ececec;
+    padding: 4px 13px;
+    margin-top: 15px;
+    background-color: #e7e7e728;
+    border-radius: 13px;
+    transition: .5s;
+    font-size: 20px;
+    font-family: var(--fonte-menu);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #4aad6d;
+}
+
+.seta {
+    margin-left: 5px;
+}
+
+.btn:hover .seta {
+    animation: seta .5s infinite;
+}
+
+@keyframes seta {
+   50%{
+    transform: translateY(-6px);
+   }
+   100%{
+    transform: translateY(6px);
+   } 
+}
+
+
+.texto {
+    width: 90%;
+    font-family: var(--fonte-texto);
+    font-size: 2.3vmin;
+    text-align: center;
+    color: white;
+    margin: 10px 20px;
+}
+
+.ctr-color {
+    background-color: #407954;
+}
+
+.box-row {
+    flex-direction: row;
+    gap: 30px;
+}
+
+.esquerda {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:left;
+    text-align: center;
+}
+
+.imagem-esq {
+    width: 70%;
+    height: 75%;
+    border-radius: 10px;
+    filter: brightness(85%);
+}
+
+.direita {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.imagem-dir {
+    width: 85%;
+    height: 80%;
+}
+
+.ctr-img-dois {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.800),rgba(0, 0, 0, 0.800)),
+    url(../imagem/fundo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.imagem {
+    width: 65%;
+    height: 50%;
+    margin-top: 10px;
+    border-radius: 10px;
+    filter: brightness(85%);
+}
+
+.apresentacao {
+    text-align: center;
+    width: 100%;
+    min-height: 40vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    color: #fff;  
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    background-color: #000000;
+}
+
+.ctr-A {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.us {
+    width: 50%;
+    height: 7%;
+    margin-top: 10px;
+    gap: 15px;
+}
+
